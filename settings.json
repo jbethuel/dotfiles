@@ -1,0 +1,53 @@
+{
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnSave": true,
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorStyle": "block",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.formatOnPaste": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 200,
+  "editor.minimap.showSlider": "always",
+  "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "entity.name.function",
+          "support.function"
+        ],
+        "settings": {
+          "fontStyle": "bold underline"
+        }
+      }
+    ]
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.list.smoothScrolling": true,
+  "workbench.fontAliasing": "auto",
+  "workbench.editor.wrapTabs": false,
+  "workbench.colorTheme": "Night Owl (No Italics)",
+  "workbench.editorAssociations": {
+    "*.png": "imagePreview.previewEditor"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.tabs.enabled": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
