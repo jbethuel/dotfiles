@@ -1,0 +1,8 @@
+# location - ~/.ssh/config
+
+# personal - github
+Host github
+HostName github.com
+IdentityFile ~/.ssh/personal
+User git
+IdentitiesOnly yes
