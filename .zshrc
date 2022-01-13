@@ -123,6 +123,9 @@ alias ngrok-client='./ngrok http http://localhost:3001'
 # git shortcuts
 alias pull="gfa && gl"
 
+# laptop temps
+alias temps='sudo powermetrics --samplers smc |grep -i "CPU temps"'
+
 # rn stuff
 export ANDROID_HOME=$HOME/Library/Android/sdk 
 export PATH=$PATH:$ANDROID_HOME/emulator 
