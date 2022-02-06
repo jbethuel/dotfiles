@@ -142,6 +142,13 @@ export NVM_DIR="$HOME/.nvm"
 # place this after nvm initialization!
 autoload -U add-zsh-hook
 
+# sample hook
+# load-hook() {
+#   echo "executing hook.."
+# }
+# add-zsh-hook chpwd load-hook
+# load-hook
+
 # load .nvmrc
 load-nvmrc() {
   if [[ -f .nvmrc && -r .nvmrc ]]; then
@@ -151,16 +158,12 @@ load-nvmrc() {
     nvm use default
   fi
 }
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
 
 # add ssh keys
 load-ssh() {
  echo "loading ssh keys.."
- ssh-add -K ~/.ssh/personal
+ ssh-add --apple-use-keychain --apple-load-keychain ~/.ssh/personal
 }
-add-zsh-hook chpwd load-ssh
-load-ssh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jbethuel/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jbethuel/Downloads/google-cloud-sdk/path.zsh.inc'; fi
