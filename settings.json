@@ -35,6 +35,8 @@
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.enablePersistentSessions": false,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
