@@ -1,5 +1,11 @@
 # location - ~/.ssh/config
 
+# sample clone
+# git clone git@<HostName>:jbethuel/config.git
+
+# load all ssh
+# ssh-add -A
+
 # personal - github
 Host github
 HostName github.com
