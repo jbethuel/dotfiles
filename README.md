@@ -4,10 +4,10 @@
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
 # Install Homebrew
-arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Install Homebrew packages
-arch -x86_64 brew install <package>
+brew install <package>
 ```
 
 # Oh My Zsh
