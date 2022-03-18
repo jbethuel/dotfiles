@@ -1,7 +1,7 @@
 # location - ~/.ssh/config
 
 # sample clone
-# git clone git@<HostName>:jbethuel/config.git
+# git clone git@<Host>:jbethuel/config.git
 
 # load all ssh
 # ssh-add -A
