@@ -15,10 +15,7 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": [
-          "entity.name.function",
-          "support.function"
-        ],
+        "scope": ["entity.name.function", "support.function"],
         "settings": {
           "fontStyle": "bold underline"
         }
@@ -26,6 +23,7 @@
     ]
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editor.enablePreview": false,
   "workbench.list.smoothScrolling": true,
   "workbench.fontAliasing": "auto",
   "workbench.editor.wrapTabs": false,
@@ -55,4 +53,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "window.zoomLevel": 1,
+  "git.autofetch": true
 }
