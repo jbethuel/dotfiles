@@ -22,6 +22,8 @@
       }
     ]
   },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs":"active",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "workbench.editor.enablePreview": false,
   "workbench.list.smoothScrolling": true,
@@ -54,5 +56,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.zoomLevel": 1,
-  "git.autofetch": true
+  "git.autofetch": true,
+  
 }
