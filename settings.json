@@ -17,7 +17,7 @@
       {
         "scope": ["entity.name.function", "support.function"],
         "settings": {
-          "fontStyle": "bold underline"
+          "fontStyle": "bold"
         }
       }
     ]
