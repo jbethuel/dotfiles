@@ -102,6 +102,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# shell prompt
+PROMPT="%Bjbethuel@macmini%b ➤ %F{46}%~%f $ "
+
 # sample environment var
 ENVIRONMENT="development"
 
