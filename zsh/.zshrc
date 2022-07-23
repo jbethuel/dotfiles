@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jbethuel/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -23,14 +23,13 @@ ZSH_THEME="robbyrussell"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+# zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -45,6 +44,9 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -70,8 +72,6 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
  git 
- zsh-autosuggestions
- react-native
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,71 +102,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# shell prompt
 PROMPT="%Bjbethuel@macmini%b ➤ %F{46}%~%f $ "
-
-# sample environment var
-ENVIRONMENT="development"
-
-export ENVIRONMENT=$ENVIRONMENT
-
-# redis - https://gist.github.com/tomysmile/1b8a321e7c58499ef9f9441b2faa0aa8
-alias redis-start='redis-server /usr/local/etc/redis.conf'
-
-# mysql start
-alias mysql-start='mysql.server start'
-
-# mongodb
-export PATH="/usr/local/opt/mongodb-community@4.0/bin:$PATH"
-alias mongo-start="mongod --config /usr/local/etc/mongod.conf"
-
-# start ngrok
-alias ngrok-client='./ngrok http http://localhost:3001'
-
-# git shortcuts
-alias pull="gfa && gl"
-
-# laptop temps
-alias temps='sudo powermetrics --samplers smc |grep -i "CPU temps"'
-
-# rn stuff
-export ANDROID_HOME=$HOME/Library/Android/sdk 
-export PATH=$PATH:$ANDROID_HOME/emulator 
-export PATH=$PATH:$ANDROID_HOME/tools 
-export PATH=$PATH:$ANDROID_HOME/tools/bin 
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-alias rnlogcat="adb logcat '*:S' ReactNative:V ReactNativeJS:V"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# node switch according to .nvmrc
-# place this after nvm initialization!
-autoload -U add-zsh-hook
+export ENVIRONMENT="development"
 
-# sample hook
-# load-hook() {
-#   echo "executing hook.."
-# }
-# add-zsh-hook chpwd load-hook
-# load-hook
-
-# load .nvmrc
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use
-  elif [[ $(nvm version) != $(nvm version default)  ]]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
-}
-
-# add ssh keys
-load-ssh() {
- echo "loading ssh keys.."
- ssh-add --apple-use-keychain --apple-load-keychain ~/.ssh/personal
-}
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jbethuel/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jbethuel/Downloads/google-cloud-sdk/path.zsh.inc'; fi

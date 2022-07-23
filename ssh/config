@@ -1,0 +1,17 @@
+# personal - github
+
+## Github sample
+
+Host github
+HostName github.com
+IdentityFile ~/.ssh/personal
+User git
+IdentitiesOnly yes
+
+## Bitbucket sample
+
+Host bitbucket
+HostName bitbucket.org
+IdentityFile ~/.ssh/bitbucket
+User git
+IdentitiesOnly yes
