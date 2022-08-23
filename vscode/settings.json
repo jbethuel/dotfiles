@@ -17,15 +17,17 @@
       {
         "scope": ["entity.name.function", "support.function"],
         "settings": {
-          "fontStyle": "bold"
+          "fontStyle": "bold underline",
         }
-      }
+      },
     ]
   },
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs":"active",
+  "editor.guides.bracketPairs": "active",
+  "editor.experimental.stickyScroll.enabled": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "workbench.editor.enablePreview": false,
+  "javascript.validate.enable": false,
+  "workbench.editor.enablePreview": true,
   "workbench.list.smoothScrolling": true,
   "workbench.fontAliasing": "auto",
   "workbench.editor.wrapTabs": false,
@@ -37,6 +39,7 @@
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.fontSize": 14,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -55,7 +58,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1,
   "git.autofetch": true,
-  
+  "window.zoomLevel": 1
 }
