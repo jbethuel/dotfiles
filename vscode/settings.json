@@ -59,5 +59,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autofetch": true,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "window.confirmBeforeClose": "always"
 }
