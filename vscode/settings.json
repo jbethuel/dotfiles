@@ -41,7 +41,7 @@
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
   "editor.smoothScrolling": true,
-  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.enabled": false,
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
