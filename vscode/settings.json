@@ -34,7 +34,7 @@
   "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.guides.bracketPairs": "active",
   "editor.largeFileOptimizations": false,
   "editor.minimap.maxColumn": 200,
