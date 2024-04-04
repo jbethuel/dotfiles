@@ -1,30 +1,44 @@
 {
+  "terminal.integrated.inheritEnv": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
   "[csharp]": {
-    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.formatOnSave": false
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.bracketPairColorization.enabled": true,
@@ -60,55 +74,8 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.mergeEditor": true,
-  "go.toolsManagement.autoUpdate": true,
-  "gopls": {
-    "build.experimentalWorkspaceModule": true
-  },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
-  "restoreTerminals.runOnStartup": false,
-  "restoreTerminals.terminals": [
-    {
-      "splitTerminals": [
-        {
-          "commands": ["cd core", "yarn start:package"],
-          "name": "core(runtime)"
-        },
-        {
-          "commands": [
-            "cd web/ClientApp",
-            "yalc link @diana/core",
-            "yarn start"
-          ],
-          "name": "web(runtime)"
-        }
-      ]
-    },
-    {
-      "splitTerminals": [
-        {
-          "commands": ["cd core"],
-          "name": "core(commands)"
-        }
-      ]
-    },
-    {
-      "splitTerminals": [
-        {
-          "commands": ["cd web/ClientApp"],
-          "name": "web(commands)"
-        }
-      ]
-    }
-  ],
-  "retrieveTerminals.config": [
-    {
-      "commands": ["echo hello", "echo world"],
-      "keepExistingTerminals": false,
-      "name": "hello"
-    }
-  ],
-  "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.env.osx": {},
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.persistentSessionReviveProcess": "never",
@@ -116,13 +83,40 @@
   "terminal.integrated.tabs.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.confirmBeforeClose": "always",
-  "window.zoomLevel": 1,
-  "workbench.colorTheme": "Night Owl (No Italics)",
+  "workbench.colorTheme": "Night Owl",
   "workbench.editor.enablePreview": true,
   "workbench.editor.wrapTabs": false,
   "workbench.editorAssociations": {
     "*.png": "imagePreview.previewEditor"
   },
   "workbench.fontAliasing": "auto",
-  "workbench.list.smoothScrolling": true
+  "workbench.list.smoothScrolling": true,
+  "window.zoomLevel": 1,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescriptreact": true
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "terminal.integrated.enablePersistentSessions": false,
+  "workbench.colorCustomizations": {
+    "[Night Owl]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "editorGroup.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    },
+    "[Night Owl (No Italics)]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "editorGroup.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    }
+  }
 }
