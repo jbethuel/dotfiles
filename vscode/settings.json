@@ -125,5 +125,14 @@
       "sideBar.foreground": "#8BADC1"
     }
   },
-  "window.restoreWindows": "none"
+  "window.restoreWindows": "none",
+  "files.readonlyInclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "search.exclude": {
+    "**/routeTree.gen.ts": true
+  }
 }
