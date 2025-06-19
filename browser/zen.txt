@@ -1,0 +1,5 @@
+browser.tabs.insertRelatedAfterCurrent true
+browser.tabs.insertAfterCurrent true
+
+zen.workspaces.hide-default-container-indicator false
+zen.view.show-newtab-button-border-top true
