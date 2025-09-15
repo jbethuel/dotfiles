@@ -118,3 +118,10 @@ if [ -f '/Users/jbethuel/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Us
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jbethuel/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jbethuel/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# opens simulator from xcode
+# list all available simulators - xcrun simctl list devices 
+# select a simulator to run xcrun simctl boot "<DEVICE-UUID>"
+sim() {
+  open -a Simulator.app
+}
