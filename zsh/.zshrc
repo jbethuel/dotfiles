@@ -108,6 +108,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# load version from .nvmrc
+if [ -f .nvmrc ]; then
+ 	version=$(cat .nvmrc)
+  echo "📦 .nvmrc found: using Node.js version $version"
+  nvm use $version
+fi
+
 export ENVIRONMENT="development"
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
