@@ -137,5 +137,9 @@
   "search.exclude": {
     "**/routeTree.gen.ts": true,
     "**/_generated/**": true
+  },
+  "workbench.editor.customLabels.patterns": {
+    "**/src/**/*.{tsx,jsx}": "${dirname}/${filename}.${extname}",
+    "**/components/**": "[Components] ${dirname}/${filename}.${extname}"
   }
 }
