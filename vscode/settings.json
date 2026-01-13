@@ -1,4 +1,5 @@
 {
+  "chat.useAgentSkills": true,
   "terminal.integrated.inheritEnv": true,
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
