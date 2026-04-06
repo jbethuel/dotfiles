@@ -1,4 +1,5 @@
 {
+  "claudeCode.preferredLocation": "sidebar",
   "chat.useAgentSkills": true,
   "terminal.integrated.inheritEnv": true,
   "[vue]": {
