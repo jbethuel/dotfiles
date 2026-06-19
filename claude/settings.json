@@ -3,7 +3,7 @@
   "permissions": {
     "defaultMode": "acceptEdits",
     "allow": [
-      "Read",
+      "Read(./**)",
       "Glob",
       "Grep",
       "Bash(ls:*)",
@@ -67,6 +67,12 @@
     "ask": [
       "Bash(npx:*)",
       "Bash(node:*)",
+      "Bash(open:*)",
+      "Bash(osascript:*)",
+      "Bash(defaults:*)",
+      "Bash(launchctl:*)",
+      "Bash(git -C:*)",
+      "Bash(git --git-dir:*)",
       "Bash(gh pr create:*)",
       "Bash(gh pr merge:*)"
     ],
