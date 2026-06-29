@@ -91,7 +91,8 @@
       "Read(./**/*.local.json)",
       "Read(./**/secrets/**)",
       "Read(./**/id_rsa)",
-      "Read(./**/*.pem)"
+      "Read(./**/*.pem)",
+      "Read(./**/*.npmrc)"
     ]
   }
 }
