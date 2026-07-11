@@ -62,13 +62,13 @@
       "Bash(mkdir:*)",
       "Bash(cp:*)",
       "Bash(mv:*)",
-      "Bash(touch:*)"
-    ],
-    "ask": [
+      "Bash(touch:*)",
       "Bash(npx:*)",
       "Bash(node:*)",
       "Bash(open:*)",
-      "Bash(osascript:*)",
+      "Bash(osascript:*)"
+    ],
+    "ask": [
       "Bash(defaults:*)",
       "Bash(launchctl:*)",
       "Bash(git -C:*)",
