@@ -41,6 +41,9 @@
       "Bash(git switch:*)",
       "Bash(git restore:*)",
       "Bash(git pull:*)",
+      "Bash(git mv:*)",
+      "Bash(git rm:*)",
+      "Bash(npx convex:*)",
       "Bash(dotnet build:*)",
       "Bash(dotnet test:*)",
       "Bash(dotnet restore:*)",
@@ -53,6 +56,7 @@
       "Bash(npm ls:*)",
       "Bash(yarn:*)",
       "Bash(pnpm:*)",
+      "Bash(/Users/jbethuel/Library/pnpm/pnpm:*)",
       "Bash(gh pr view:*)",
       "Bash(gh pr list:*)",
       "Bash(gh pr diff:*)",
@@ -63,12 +67,22 @@
       "Bash(cp:*)",
       "Bash(mv:*)",
       "Bash(touch:*)",
-      "Bash(npx:*)",
+      "Bash(source:*)",
+      "Bash(nvm:*)",
       "Bash(node:*)",
-      "Bash(open:*)",
-      "Bash(osascript:*)"
+      "Bash(npx electron:*)",
+      "Bash(pkill:*)",
+      "Bash(lsof:*)",
+      "Bash(kill:*)",
+      "Bash(readlink:*)",
+      "Bash(corepack:*)",
+      "Bash(curl http://localhost:*)",
+      "Bash(curl http://127.0.0.1:*)"
     ],
     "ask": [
+      "Bash(npx:*)",
+      "Bash(open:*)",
+      "Bash(osascript:*)",
       "Bash(defaults:*)",
       "Bash(launchctl:*)",
       "Bash(git -C:*)",
@@ -91,8 +105,8 @@
       "Read(./**/*.local.json)",
       "Read(./**/secrets/**)",
       "Read(./**/id_rsa)",
-      "Read(./**/*.pem)",
-      "Read(./**/*.npmrc)"
+      "Read(./**/*.pem)"
     ]
-  }
+  },
+  "switchModelsOnFlag": false
 }
