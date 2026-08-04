@@ -1,7 +1,43 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
-    "allow": ["Bash(npx *)", "Bash(node *)", "Bash(npm *)", "Bash(pnpm *)"],
+    "allow": [
+      "Bash(node *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(pnpm *)",
+      "Bash(yarn *)",
+      "Bash(bun *)",
+
+      "Bash(git *)",
+
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(mkdir *)",
+      "Bash(touch *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(sed *)",
+      "Bash(awk *)",
+      "Bash(sort *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+      "Bash(xargs *)",
+
+      "Bash(curl *)",
+      "Bash(wget *)",
+
+      "Bash(playwright *)",
+      "Bash(vitest *)",
+      "Bash(jest *)",
+
+      "Bash(zip *)",
+      "Bash(unzip *)",
+      "Bash(tar *)"
+    ],
     "deny": [
       "Bash(rm -rf /)",
       "Bash(rm -rf /*)",
