@@ -1,65 +1,32 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "effortLevel": "xhigh",
-  "switchModelsOnFlag": false,
   "permissions": {
-    "defaultMode": "acceptEdits",
-    "allow": [
-      "Bash(node:*)",
-      "Bash(npm:*)",
-      "Bash(npx:*)",
-      "Bash(pnpm:*)",
-      "Bash(yarn:*)",
-      "Bash(mkdir:*)",
-
-      "Bash(git status:*)",
-      "Bash(git diff:*)",
-      "Bash(git log:*)",
-      "Bash(git show:*)",
-      "Bash(git branch:*)",
-
-      "Bash(ls:*)",
-      "Bash(pwd:*)",
-      "Bash(cat:*)",
-      "Bash(head:*)",
-      "Bash(tail:*)",
-      "Bash(find:*)",
-      "Bash(rg:*)",
-      "Bash(grep:*)",
-      "Bash(wc:*)",
-      "Bash(sed:*)",
-      "Bash(awk:*)",
-
-      "Bash(ps:*)",
-      "Bash(lsof:*)",
-
-      "Read(*)",
-      "Edit(*)",
-      "Write(*)"
-    ],
-    "ask": [
-      "Bash(npx:*)",
-      "Bash(open:*)",
-      "Bash(osascript:*)",
-      "Bash(defaults:*)",
-      "Bash(launchctl:*)",
-      "Bash(git -C:*)",
-      "Bash(git --git-dir:*)",
-      "Bash(gh pr create:*)",
-      "Bash(gh pr merge:*)"
-    ],
     "deny": [
-      "Bash(rm -rf:*)",
-      "Bash(npm publish:*)",
-      "Bash(yarn publish:*)",
-      "Bash(pnpm publish:*)",
-      "Bash(dotnet nuget push:*)",
+      "Bash(rm -rf /)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -rf ~)",
+      "Bash(rm -rf ~/*)",
       "Read(./**/.env)",
       "Read(./**/.env.*)",
       "Read(./**/*.local.json)",
       "Read(./**/secrets/**)",
       "Read(./**/id_rsa)",
       "Read(./**/*.pem)"
-    ]
-  }
+    ],
+    "ask": [],
+    "defaultMode": "acceptEdits"
+  },
+  "model": "opus",
+  "extraKnownMarketplaces": {
+    "mattpocock": {
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills"
+      }
+    }
+  },
+  "effortLevel": "xhigh",
+  "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": true,
+  "switchModelsOnFlag": false
 }
