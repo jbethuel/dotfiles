@@ -1,13 +1,6 @@
 {
-  "claudeCode.preferredLocation": "sidebar",
-  "chat.useAgentSkills": true,
-  "terminal.integrated.inheritEnv": true,
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
-  },
   "[csharp]": {
-    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
     "editor.formatOnSave": false
   },
   "[css]": {
@@ -28,7 +21,7 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -36,18 +29,22 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    }
+    "editor.formatOnSave": false
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    }
+    "editor.formatOnSave": true
   },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "chat.disableAIFeatures": true,
+  "chat.useAgentSkills": true,
+  "chat.viewSessions.orientation": "stacked",
+  "claudeCode.allowDangerouslySkipPermissions": true,
+  "claudeCode.initialPermissionMode": "bypassPermissions",
+  "claudeCode.preferredLocation": "panel",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "phase",
@@ -65,83 +62,40 @@
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": false,
   "editor.tabSize": 2,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": ["entity.name.function", "support.function"],
-        "settings": {
-          "fontStyle": "bold underline"
-        }
-      }
-    ]
+  "files.readonlyInclude": {
+    "**/_generated/**": true,
+    "**/routeTree.gen.ts": true
   },
-  "editor.unicodeHighlight.allowedCharacters": {
-    " ": true,
-    "​": true
+  "files.watcherExclude": {
+    "**/_generated/**": true,
+    "**/routeTree.gen.ts": true
   },
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.mergeEditor": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.validate.enable": false,
+  "js/ts.experimental.useTsgo": true,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.validate.enabled": false,
+  "search.exclude": {
+    "**/_generated/**": true,
+    "**/routeTree.gen.ts": true
+  },
+  "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.env.osx": {},
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.inheritEnv": true,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.tabs.enabled": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.confirmBeforeClose": "always",
-  "workbench.colorTheme": "Night Owl",
+  "window.restoreWindows": "none",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Dark+",
   "workbench.editor.enablePreview": true,
   "workbench.editor.wrapTabs": false,
   "workbench.editorAssociations": {
     "*.png": "imagePreview.previewEditor"
   },
   "workbench.fontAliasing": "auto",
-  "workbench.list.smoothScrolling": true,
-  "window.zoomLevel": 1,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "typescriptreact": true
-  },
-  "go.toolsManagement.autoUpdate": true,
-  "terminal.integrated.enablePersistentSessions": false,
-  "workbench.colorCustomizations": {
-    "[Night Owl]": {
-      "activityBar.background": "#000C1D",
-      "activityBar.border": "#102a44",
-      "editorGroup.border": "#102a44",
-      "sideBar.background": "#001122",
-      "sideBar.border": "#102a44",
-      "sideBar.foreground": "#8BADC1"
-    },
-    "[Night Owl (No Italics)]": {
-      "activityBar.background": "#000C1D",
-      "activityBar.border": "#102a44",
-      "editorGroup.border": "#102a44",
-      "sideBar.background": "#001122",
-      "sideBar.border": "#102a44",
-      "sideBar.foreground": "#8BADC1"
-    }
-  },
-  "window.restoreWindows": "none",
-  "files.readonlyInclude": {
-    "**/routeTree.gen.ts": true,
-    "**/_generated/**": true
-  },
-  "files.watcherExclude": {
-    "**/routeTree.gen.ts": true,
-    "**/_generated/**": true
-  },
-  "search.exclude": {
-    "**/routeTree.gen.ts": true,
-    "**/_generated/**": true
-  },
-  "workbench.editor.customLabels.patterns": {
-    "**/src/**/*.{tsx,jsx}": "${dirname}/${filename}.${extname}",
-    "**/components/**": "[Components] ${dirname}/${filename}.${extname}"
-  }
+  "workbench.list.smoothScrolling": true
 }
