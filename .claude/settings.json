@@ -8,9 +8,7 @@
       "Bash(pnpm *)",
       "Bash(yarn *)",
       "Bash(bun *)",
-
       "Bash(git *)",
-
       "Bash(ls *)",
       "Bash(cat *)",
       "Bash(cp *)",
@@ -26,14 +24,11 @@
       "Bash(tail *)",
       "Bash(wc *)",
       "Bash(xargs *)",
-
       "Bash(curl *)",
       "Bash(wget *)",
-
       "Bash(playwright *)",
       "Bash(vitest *)",
       "Bash(jest *)",
-
       "Bash(zip *)",
       "Bash(unzip *)",
       "Bash(tar *)"
@@ -65,5 +60,8 @@
   "effortLevel": "xhigh",
   "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
-  "switchModelsOnFlag": false
+  "switchModelsOnFlag": false,
+  "enabledPlugins": {
+    "mattpocock-skills@mattpocock": true
+  }
 }
