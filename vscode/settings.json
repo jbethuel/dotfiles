@@ -1,43 +1,43 @@
 {
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
   },
   "chat.disableAIFeatures": true,
   "chat.useAgentSkills": true,
@@ -64,11 +64,11 @@
   "editor.tabSize": 2,
   "files.readonlyInclude": {
     "**/_generated/**": true,
-    "**/routeTree.gen.ts": true
+    "**/routeTree.gen.ts": true,
   },
   "files.watcherExclude": {
     "**/_generated/**": true,
-    "**/routeTree.gen.ts": true
+    "**/routeTree.gen.ts": true,
   },
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -78,7 +78,7 @@
   "js/ts.validate.enabled": false,
   "search.exclude": {
     "**/_generated/**": true,
-    "**/routeTree.gen.ts": true
+    "**/routeTree.gen.ts": true,
   },
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.env.osx": {},
@@ -94,8 +94,19 @@
   "workbench.editor.enablePreview": true,
   "workbench.editor.wrapTabs": false,
   "workbench.editorAssociations": {
-    "*.png": "imagePreview.previewEditor"
+    "*.png": "imagePreview.previewEditor",
   },
   "workbench.fontAliasing": "auto",
-  "workbench.list.smoothScrolling": true
+  "workbench.list.smoothScrolling": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://turbo.build": true,
+    "https://www.schemastore.org/": true,
+  },
+  "workbench.browser.openLocalhostLinks": false,
 }
