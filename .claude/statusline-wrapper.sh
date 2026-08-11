@@ -3,6 +3,9 @@
 # Read JSON input once
 input=$(cat)
 
+# Get model name
+model=$(echo "$input" | jq -r '.model.display_name // .model.id // "UNKNOWN"')
+
 # Get git info from existing script
 git_info=$(echo "$input" | bash ~/.claude/statusline-command.sh)
 
@@ -10,4 +13,4 @@ git_info=$(echo "$input" | bash ~/.claude/statusline-command.sh)
 context_pct="CONTEXT: $(echo "$input" | npx ccstatusline)"
 
 # Combine outputs
-printf '%s | %s' "$git_info" "$context_pct"
+printf 'MODEL: %s | %s | %s' "$model" "$context_pct" "$git_info"
