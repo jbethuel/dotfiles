@@ -59,6 +59,7 @@
   },
   "effortLevel": "xhigh",
   "tui": "fullscreen",
+  "theme": "dark",
   "skipDangerousModePermissionPrompt": true,
   "switchModelsOnFlag": false,
   "enabledPlugins": {
