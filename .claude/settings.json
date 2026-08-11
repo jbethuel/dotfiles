@@ -64,5 +64,9 @@
   "switchModelsOnFlag": false,
   "enabledPlugins": {
     "mattpocock-skills@mattpocock": true
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-wrapper.sh"
   }
 }
