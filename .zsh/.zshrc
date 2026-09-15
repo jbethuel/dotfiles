@@ -142,3 +142,11 @@ if [ -f '/Users/jbethuel/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then 
 sim() {
   open -a Simulator.app
 }
+
+# pnpm
+export PNPM_HOME='/Users/jbethuel/Library/pnpm'
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
