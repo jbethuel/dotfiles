@@ -137,7 +137,8 @@ if [ -f '/Users/jbethuel/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Us
 if [ -f '/Users/jbethuel/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jbethuel/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 # opens simulator from xcode
-# list all available simulators - xcrun simctl list devices 
+# list all available simulators:
+# xcrun simctl list devices 
 # select a simulator to run xcrun simctl boot "<DEVICE-UUID>"
 sim() {
   open -a Simulator.app
@@ -150,3 +151,15 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
+
+# opens simulator from android studio
+# list all available simulator:
+# emulator -list-avds
+# emulator -avd YOUR_AVD_NAME
+android_sim() {
+  emulator -avd Pixel_7a
+}
