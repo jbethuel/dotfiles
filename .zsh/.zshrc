@@ -163,3 +163,5 @@ export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
 android_sim() {
   emulator -avd Pixel_7a
 }
+
+export PATH="$HOME/.local/bin:$PATH"
