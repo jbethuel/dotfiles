@@ -70,5 +70,18 @@
     "command": "npx -y ccstatusline@latest",
     "padding": 0,
     "refreshInterval": 10
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/block-dangerous-git.sh"
+          }
+        ]
+      }
+    ]
   }
 }
