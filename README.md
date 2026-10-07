@@ -26,7 +26,7 @@ deleted. Use `--backup` to keep copies of whatever gets replaced.
 
 ## Claude Code plugins
 
-Plugins are not vendored here. `.claude/settings.json` lists them under
+Plugins are not synced from here. `.claude/settings.json` lists them under
 `enabledPlugins` and their marketplaces under `extraKnownMarketplaces`; Claude
 Code downloads them into `~/.claude/plugins/`.
 
@@ -41,4 +41,13 @@ To install one by hand, run these inside Claude Code:
 ```
 /plugin marketplace add michael-denyer/pstack-claude
 /plugin install pstack@pstack-claude
+```
+
+`plugins/pstack/` keeps a reference copy of pstack's skills (v0.9.74) with its
+licenses. It is for reading only: `install-agents.sh` does not sync it, and the
+plugin is still what Claude Code loads. To refresh it after a plugin update:
+
+```
+rsync -a --delete --exclude .DS_Store \
+  ~/.claude/plugins/cache/pstack-claude/pstack/<version>/skills/ plugins/pstack/skills/
 ```
