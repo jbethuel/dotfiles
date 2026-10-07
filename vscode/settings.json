@@ -84,6 +84,7 @@
   "terminal.integrated.env.osx": {},
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.inheritEnv": true,
+  "terminal.integrated.macOptionClickForcesSelection": true,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.tabs.enabled": true,
@@ -105,8 +106,12 @@
     "https://raw.githubusercontent.com/devcontainers/spec/": true,
     "https://raw.githubusercontent.com/microsoft/vscode/": true,
     "https://schemastore.azurewebsites.net/": true,
+    "https://spec.openapis.org/": true,
     "https://turbo.build": true,
+    "https://turborepo.com": true,
     "https://www.schemastore.org/": true
   },
-  "workbench.browser.openLocalhostLinks": false
+  "workbench.browser.openLocalhostLinks": false,
+  "zenMode.hideStatusBar": false,
+  "claudeCode.useTerminal": true
 }
