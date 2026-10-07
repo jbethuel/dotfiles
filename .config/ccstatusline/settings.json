@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "lines": [
     [
       {
@@ -8,12 +8,8 @@
         "rawValue": true
       },
       {
-        "id": "95887b68-3d36-4504-9722-89d77684b441",
-        "type": "reset-timer"
-      },
-      {
-        "id": "814bcc32-4283-4878-ae71-0379feb67de8",
-        "type": "session-usage"
+        "id": "78addd92-0b4e-4ca0-b4f0-8f3ded05249b",
+        "type": "thinking-effort"
       },
       {
         "id": "18270304-7066-40a6-85fb-c8458f96c41d",
@@ -21,6 +17,14 @@
         "metadata": {
           "inverse": "false"
         }
+      },
+      {
+        "id": "814bcc32-4283-4878-ae71-0379feb67de8",
+        "type": "session-usage"
+      },
+      {
+        "id": "95887b68-3d36-4504-9722-89d77684b441",
+        "type": "reset-timer"
       }
     ]
   ],
