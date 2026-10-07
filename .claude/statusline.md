@@ -1,1 +1,0 @@
-npx -y ccstatusline@latest

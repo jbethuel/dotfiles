@@ -1,7 +1,0 @@
-[
-  {
-    "key": "tab",
-    "command": "editor.action.inlineSuggest.commit",
-    "when": "textInputFocus && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
-  }
-]

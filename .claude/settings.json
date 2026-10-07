@@ -75,7 +75,6 @@
   "skipDangerousModePermissionPrompt": true,
   "switchModelsOnFlag": false,
   "enabledPlugins": {
-    "mattpocock-skills@mattpocock": false,
     "vercel@claude-plugins-official": true,
     "typesafe@typesafe-ai": true,
     "pstack@pstack-claude": true
