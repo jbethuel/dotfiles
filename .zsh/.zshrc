@@ -1,11 +1,11 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
@@ -70,9 +70,8 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
- git 
-)
+plugins=(git)
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,24 +90,32 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch $(uname -m)"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-PROMPT="%Bjbethuel@macmini%b ➤ %F{46}%~%f $ "
+export PATH=/opt/homebrew/bin:$PATH
 
+# zsh plugins
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+nvm use default --silent >/dev/null 2>&1  # Ensure the nvm default version wins over any system node on PATH
 
-# load version from .nvmrc
 autoload -U add-zsh-hook
 load-nvmrc() {
   local node_version="$(nvm version)"
@@ -125,25 +132,29 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-export ENVIRONMENT="development"
+# dotnet
+export dotnet=/usr/local/share/dotnet/dotnet
+# /etc/paths.d/dotnet-cli-tools adds a literal "~/.dotnet/tools", which never
+# expands inside PATH (a relative entry). Drop it; the absolute path is added below.
+path=(${path:#\~/*})
+export PATH="$PATH:/Users/jbethuel/.dotnet/tools"
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# pnpm
+export PNPM_HOME="/Users/jbethuel/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jbethuel/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jbethuel/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+# 
+export PATH="$HOME/.local/bin:$PATH"
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jbethuel/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jbethuel/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+# Added by Antigravity
+export PATH="/Users/jbethuel/.antigravity/antigravity/bin:$PATH"
 
-# opens simulator from xcode
-# list all available simulators:
-# xcrun simctl list devices 
-# select a simulator to run xcrun simctl boot "<DEVICE-UUID>"
 sim() {
   open -a Simulator.app
 }
-
 # pnpm
 export PNPM_HOME='/Users/jbethuel/Library/pnpm'
 case ":$PATH:" in
@@ -164,4 +175,5 @@ android_sim() {
   emulator -avd Pixel_7a
 }
 
-export PATH="$HOME/.local/bin:$PATH"
+# opencode
+export PATH=/Users/jbethuel/.opencode/bin:$PATH
