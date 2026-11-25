@@ -49,42 +49,6 @@
     "defaultMode": "acceptEdits"
   },
   "model": "opus",
-  "extraKnownMarketplaces": {
-    "mattpocock": {
-      "source": {
-        "source": "github",
-        "repo": "mattpocock/skills"
-      }
-    },
-    "typesafe-ai": {
-      "source": {
-        "source": "github",
-        "repo": "typesafe-ai/skills"
-      }
-    },
-    "pstack-claude": {
-      "source": {
-        "source": "github",
-        "repo": "michael-denyer/pstack-claude"
-      }
-    }
-  },
-  "effortLevel": "xhigh",
-  "tui": "fullscreen",
-  "theme": "dark",
-  "skipDangerousModePermissionPrompt": true,
-  "switchModelsOnFlag": false,
-  "enabledPlugins": {
-    "vercel@claude-plugins-official": true,
-    "typesafe@typesafe-ai": true,
-    "pstack@pstack-claude": true
-  },
-  "statusLine": {
-    "type": "command",
-    "command": "npx -y ccstatusline@latest",
-    "padding": 0,
-    "refreshInterval": 10
-  },
   "hooks": {
     "PreToolUse": [
       {
@@ -97,5 +61,34 @@
         ]
       }
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccstatusline@latest",
+    "padding": 0,
+    "refreshInterval": 10
+  },
+  "enabledPlugins": {
+    "vercel@claude-plugins-official": true,
+    "typesafe@typesafe-ai": true
+  },
+  "extraKnownMarketplaces": {
+    "mattpocock": {
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills"
+      }
+    },
+    "typesafe-ai": {
+      "source": {
+        "source": "github",
+        "repo": "typesafe-ai/skills"
+      }
+    }
+  },
+  "effortLevel": "xhigh",
+  "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark",
+  "switchModelsOnFlag": false
 }
