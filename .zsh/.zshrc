@@ -149,9 +149,6 @@ esac
 # 
 export PATH="$HOME/.local/bin:$PATH"
 
-# Added by Antigravity
-export PATH="/Users/jbethuel/.antigravity/antigravity/bin:$PATH"
-
 sim() {
   open -a Simulator.app
 }
