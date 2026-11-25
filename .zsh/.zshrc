@@ -174,6 +174,3 @@ export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
 android_sim() {
   emulator -avd Pixel_7a
 }
-
-# opencode
-export PATH=/Users/jbethuel/.opencode/bin:$PATH
